@@ -27,3 +27,12 @@ eval "$(rbenv init -)"
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
 fi
+
+
+# ---  shell_env  --- #
+
+if [ -f ~/.shell_env ]; then
+    . ~/.shell_env
+fi
+
+
