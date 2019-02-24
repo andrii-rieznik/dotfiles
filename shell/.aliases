@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+
+# ---  navigation  --- #
+
+alias ..="cd .."
+alias db="cd ~/Dropbox"
+alias dl="cd ~/Downloads"
+
+alias la="ls -lah"
+alias ll="ls -l"
+
+
+# ---  colorize  --- #
+
+alias grep='grep --color=auto'
+
+
+# ---  git  --- #
+
+alias gs='git status'
+alias gsu='git status -uno'
+
+
+# ---  docker  --- #
+
+alias remove-all-containers='docker rm $(docker ps -aq)'
+alias remove-untagged-images='docker rmi `docker images | grep "^<none>" | awk "{print \\$3}"`'
+
+
+# ---  shell  --- #
+
+alias bashreload=". ~/.bash_profile"

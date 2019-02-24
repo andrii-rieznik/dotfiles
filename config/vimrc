@@ -1,0 +1,148 @@
+set encoding=utf-8
+set nocompatible              " required
+filetype off                  " required
+set nu " number of lines
+syntax enable
+set t_Co=256
+" let &t_SI.="\e[5 q"
+" let &t_EI.="\e[1 q"
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'scrooloose/nerdtree'
+" Plugin 'vim-scripts/indentpython.vim'
+
+" add all your plugins here (note older versions of Vundle
+" used Bundle instead of Plugin)
+
+" ...
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Split layouts
+
+set splitbelow
+set splitright
+
+" Split navigations
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
+" Enable code folding
+set foldmethod=indent
+set foldlevel=99
+" Doctring preview
+let g:SimpylFold_docstring_preview=1
+
+" Enable folding with the spacebar
+nnoremap <space> za
+
+" Highligth trailing whitespace
+highlight BadWhitespace ctermbg=red guibg=darkred
+
+" Python PEP8
+au BufNewFile,BufRead *.py,*.pyw
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /\s\+$/
+
+" Ruby
+au BufNewFile,BufRead *.rb,*.erb,*slim
+    \ set tabstop=2 |
+    \ set softtabstop=2 |
+    \ set shiftwidth=2 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix
+au BufRead,BufNewFile *.rb,*.erb,*.slim match BadWhitespace /^\t\+/
+au BufRead,BufNewFile *.rb,*.erb,*.slim match BadWhitespace /\s\+$/
+
+" Full stack development
+" au BufNewFile,BufRead *.js, *.html, *.css
+"    \ set tabstop=2 |
+"    \ set softtabstop=2 |
+"    \ set shiftwidth=2 |
+
+" Recommend settings for syntastic
+let python_highlight_all=1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Color schemes
+" Should be putted after call vundle#end()
+" Plugin 'altercation/vim-colors-solarized'
+Plugin 'junegunn/seoul256.vim'
+
+if has('gui_running')
+  set background=dark
+  colorscheme solarized
+  call togglebg#map("<F5>")
+else
+  let g:seoul256_background = 234 " 233 (darkest) ~ 239 (lightest)
+  colo seoul256
+endif
+
+" File browser settings
+map <C-n> :NERDTreeToggle<CR>
+
+" let g:airline_theme='minimalist'
+" let g:airline_powerline_fonts = 1
+" let g:airline#extensions#tabline#enabled = 1
+
+" brighten/dim background - a'la macOS dim screen function keys
+" 233 (darkest) ~ 239 (lightest) 252 (darkest) ~ 256 (lightest)
+
+function! Seoul256Brighten()
+    if g:seoul256_background == 239
+        let g:seoul256_background = 252
+    elseif g:seoul256_background == 256
+        let  g:seoul256_background = 256
+    else
+        let g:seoul256_background += 1
+    endif
+    colo seoul256
+endfunction
+"
+function! Seoul256Dim()
+    if g:seoul256_background == 252
+        let g:seoul256_background = 239
+    elseif g:seoul256_background == 233
+        let g:seoul256_background = 233
+    else
+        let g:seoul256_background -= 1
+    endif
+    colo seoul256
+endfunction
+"
+nmap <F1> :call Seoul256Dim()<CR>
+nmap <F2> :call Seoul256Brighten()<CR>
+
+" Switch between paste and nopaste modes
+set pastetoggle=<F3>

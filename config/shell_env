@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+. "$HOME/.shell/.exports"
+. "$HOME/.shell/.aliases"
+. "$HOME/.shell/.functions"

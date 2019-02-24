@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+
+# ---  iruby notebook  --- #
+
+export LIBZMQ_PATH=$(brew --prefix zeromq)/lib
+export LIBCZMQ_PATH=$(brew --prefix czmq)/lib
+
+
+# ---  terminal colorising  --- #
+
+export TERM=xterm-color
+export CLICOLOR=1
+export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
+export PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01;31m\]✘"; fi` \[\033[00;37m\]\h\[\033[01;34m\] \w\[\033[00;33m\]$(__git_ps1 " (%s)") \[\033[01;37m\]>\[\033[00m\] '
+
+
+# ---  postgresql binaries  --- #
+
+export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"

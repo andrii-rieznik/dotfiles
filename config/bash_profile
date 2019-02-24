@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+
+# ---  bash completion  --- #
+
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+   . $(brew --prefix)/etc/bash_completion
+fi
+
+
+# ---  python virtualenvwrapper  --- #
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/workspace
+export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+# ---  rbenv  --- #
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+
+# ---  bashrc  --- #
+
+if [ -f ~/.bashrc ]; then
+    . ~/.bashrc
+fi
