@@ -15,6 +15,10 @@
     ~/.editorconfig: config/editorconfig
     ~/.vimrc: config/vimrc
 
+    # Python:
+    ~/.py_prompt: python/prompt.py
+    ~/.python_startup: config/python_startup
+
 - brewfile:
     file: Brewfile
     no-upgrage: true

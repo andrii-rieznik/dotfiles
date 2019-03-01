@@ -36,3 +36,8 @@ if [ -f ~/.shell_env ]; then
 fi
 
 
+# ---  python_startup  --- #
+
+if [ -f ~/.python_startup ]; then
+    . ~/.python_startup
+fi

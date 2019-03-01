@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+
+# ---  prompt  --- #
+
+if [ -f ~/.py_prompt ]; then
+    export PYTHONSTARTUP=~/.py_prompt
+fi
