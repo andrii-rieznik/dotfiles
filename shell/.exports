@@ -21,3 +21,8 @@ export PS1='`if [ $? = 0 ]; then echo "\[\033[01;32m\]✔"; else echo "\[\033[01
 # ---  postgresql binaries  --- #
 
 export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
+
+
+# ---  Homebrew  --- #
+
+export HOMEBREW_NO_ANALYTICS=1  # prevent brew to collect statistic
