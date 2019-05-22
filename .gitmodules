@@ -7,3 +7,6 @@
 [submodule "dotbot-pip"]
 	path = dotbot-pip
 	url = https://github.com/sobolevn/dotbot-pip.git
+[submodule "dotbot-duti"]
+	path = dotbot-duti
+	url = git@github.com:andrejreznik/dotbot-duti.git
