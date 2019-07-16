@@ -30,6 +30,7 @@ alias gsu='git status -uno'
 
 # ---  docker  --- #
 
+alias stop-all-containers='docker stop $(docker ps -a -q)'
 alias remove-all-containers='docker rm $(docker ps -aq)'
 alias remove-untagged-images='docker rmi `docker images | grep "^<none>" | awk "{print \\$3}"`'
 

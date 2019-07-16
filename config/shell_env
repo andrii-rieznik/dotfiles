@@ -3,3 +3,9 @@
 . "$HOME/.shell/.exports"
 . "$HOME/.shell/.aliases"
 . "$HOME/.shell/.functions"
+
+# ---  Local variables and overrides  --- #
+
+if [[ -f "$HOME/.shell_env_local" ]]; then
+  . "$HOME/.shell_env_local"
+fi
