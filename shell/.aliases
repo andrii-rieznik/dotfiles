@@ -8,6 +8,7 @@ alias dl="cd ~/Downloads"
 
 alias la="ls -lah"
 alias ll="ls -l"
+alias ladate="la -t"
 
 
 # ---  colorize  --- #
