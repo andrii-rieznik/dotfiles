@@ -22,6 +22,8 @@
 
 - brewfile:
     file: Brewfile
+    stdout: true
+    stderr: true
     no-upgrage: true
 
 - duti:
