@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # ---  navigation  --- #
 
@@ -38,4 +38,4 @@ alias remove-untagged-images='docker rmi `docker images | grep "^<none>" | awk "
 
 # ---  shell  --- #
 
-alias bashreload=". ~/.bash_profile"
+alias zshreload=". ~/.zshrc"
