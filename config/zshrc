@@ -1,0 +1,57 @@
+#!/usr/bin/env zsh
+
+
+# ---  shell_env  --- #
+
+if [ -f ~/.shell_env ]; then
+    . ~/.shell_env
+fi
+
+if [ -f ~/.shell_env ]; then
+    . ~/.shell_env
+fi
+
+
+ZSH_THEME="my_custom_theme"
+
+
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+
+plugins=(
+  git
+)
+
+
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+    . $ZSH/oh-my-zsh.sh
+fi
+
+
+# ---  python virtualenvwrapper  --- #
+
+if [ -f ~/.virtualenvwrapper ]; then
+    . ~/.virtualenvwrapper
+fi
+
+
+# ---  rbenv  --- #
+
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
+
+# ---  python_startup  --- #
+
+if [ -f ~/.python_startup ]; then
+    . ~/.python_startup
+fi
+
+
+# ---  nvm  --- #
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
