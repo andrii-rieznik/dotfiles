@@ -27,6 +27,7 @@ alias go='git checkout'
 alias got='git'  # prevent typo
 alias gs='git status'
 alias gsu='git status -uno'
+alias gsmu='git submodule update --init --recursive'
 
 
 # ---  docker  --- #
