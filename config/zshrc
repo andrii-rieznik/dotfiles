@@ -1,10 +1,16 @@
 #!/usr/bin/env zsh
 
 
+# ---  shell_env  --- #
 
+if [ -f ~/.shell_env ]; then
+    . ~/.shell_env
+fi
+
+
+# --- zsh customization  --- #
 
 ZSH_THEME="my_custom_theme"
-
 
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -18,12 +24,6 @@ plugins=(
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
     . $ZSH/oh-my-zsh.sh
-fi
-
-# ---  shell_env  --- #
-
-if [ -f ~/.shell_env ]; then
-    . ~/.shell_env
 fi
 
 
