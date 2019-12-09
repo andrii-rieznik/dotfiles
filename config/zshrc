@@ -1,15 +1,6 @@
 #!/usr/bin/env zsh
 
 
-# ---  shell_env  --- #
-
-if [ -f ~/.shell_env ]; then
-    . ~/.shell_env
-fi
-
-if [ -f ~/.shell_env ]; then
-    . ~/.shell_env
-fi
 
 
 ZSH_THEME="my_custom_theme"
@@ -27,6 +18,12 @@ plugins=(
 
 if [ -f $ZSH/oh-my-zsh.sh ]; then
     . $ZSH/oh-my-zsh.sh
+fi
+
+# ---  shell_env  --- #
+
+if [ -f ~/.shell_env ]; then
+    . ~/.shell_env
 fi
 
 
