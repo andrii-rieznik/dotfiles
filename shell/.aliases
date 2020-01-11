@@ -35,6 +35,7 @@ alias gsmu='git submodule update --init --recursive'
 alias stop-all-containers='docker stop $(docker ps -a -q)'
 alias remove-all-containers='docker rm $(docker ps -aq)'
 alias remove-untagged-images='docker rmi `docker images | grep "^<none>" | awk "{print \\$3}"`'
+alias remove-dangling-volumes='docker volume rm $(docker volume ls -qf dangling=true)' # only no longer connected to any containers
 
 
 # ---  shell  --- #
