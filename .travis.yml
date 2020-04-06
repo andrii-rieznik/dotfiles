@@ -1,6 +1,8 @@
 os: osx
-
-language: shell
+osx_image: xcode11
 python: 3.7
+language: shell
+
+before_script: alias python='python3'
 
 script: ./install
