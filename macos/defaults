@@ -1,0 +1,8 @@
+#!/usr/bin/env zsh
+
+# ---  import Terminal.app theme  --- #
+
+theme=$(<Nord-Theme.terminal)
+plutil -replace Window\ Settings.Material-Theme -xml "$theme" ~/Library/Preferences/com.apple.Terminal.plist
+defaults write com.apple.Terminal "Default Window Settings" -string "Nord-Theme"
+defaults write com.apple.Terminal "Startup Window Settings" -string "Nord-Theme"

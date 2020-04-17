@@ -38,4 +38,7 @@
   - ["curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.3/install.sh | bash", Installing nvm]
 
 - shell:
+  - [zsh macos/defaults, Import macOS defaults]
+
+- shell:
   - [brew cleanup, Cleaning up]
