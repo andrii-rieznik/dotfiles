@@ -1,8 +1,18 @@
 language: sh
 os: osx
-osx_image: xcode11
-env: PYTHON=3.7.7
+# osx_image: xcode11
+# env: PYTHON=3.7.7
 
-before_install: python --version 
+addons:
+  homebrew:
+    update: true
+    packages: python3
+
+before_install:
+  - pip3 install virtualenv
+  - virtualenv -p python3 ~/venv
+  - source ~/venv/bin/activate
+
+before_script: python --version 
 
 script: ./install
