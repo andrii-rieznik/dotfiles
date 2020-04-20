@@ -1,12 +1,5 @@
-language: sh
+language: shell
 os: osx
-# osx_image: xcode11
-# env: PYTHON=3.7.7
-
-addons:
-  homebrew:
-    update: true
-    packages: python3
 
 before_install:
   - pip3 install virtualenv
