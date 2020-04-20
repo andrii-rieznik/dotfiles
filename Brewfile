@@ -50,7 +50,3 @@ cask "the-unarchiver"
 cask "transmission"
 cask "vlc"
 cask "zeplin"
-mas "1Password 7", id: 1333542190
-mas "GIPHY CAPTURE", id: 668208984
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
