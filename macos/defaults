@@ -3,6 +3,10 @@
 # ---  import Terminal.app theme  --- #
 
 theme=$(<Nord-Theme.terminal)
+
+# to backup terminal preferences use:
+# plutil -convert xml1 -o windows.plist ~/Library/Preferences/com.apple.Terminal.plist
+
 plutil -replace Window\ Settings.Material-Theme -xml "$theme" ~/Library/Preferences/com.apple.Terminal.plist
 defaults write com.apple.Terminal "Default Window Settings" -string "Nord-Theme"
 defaults write com.apple.Terminal "Startup Window Settings" -string "Nord-Theme"

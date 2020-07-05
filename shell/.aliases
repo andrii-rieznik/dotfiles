@@ -5,6 +5,8 @@
 alias ..="cd .."
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
+alias docs="cd ~/Documents"
+alias dotfiles="cd ~/.dotfiles"
 
 alias la="ls -lah"
 alias ll="ls -l"

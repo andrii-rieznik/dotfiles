@@ -1,7 +1,9 @@
 #org.mozilla.Firefox public.html viewer
 org.mozilla.Firefox pdf viewer
+org.videolan.vlc avi viewer
 
 org.qgis.qgis2 tif all
+cx.c3.theunarchiver rar all
 
 com.sublimetext.3 json editor
 com.sublimetext.3 yaml editor
@@ -13,5 +15,3 @@ com.sublimetext.3 bash editor
 com.sublimetext.3 txt editor
 com.sublimetext.3 csv editor
 com.sublimetext.3 md editor
-
-org.videolan.vlc avi viewer
