@@ -25,3 +25,14 @@ export PATH="/usr/local/opt/postgresql@9.5/bin:$PATH"
 # ---  Homebrew  --- #
 
 export HOMEBREW_NO_ANALYTICS=1  # prevent brew to collect statistic
+
+
+# ---  Compilers and ruby  --- #
+
+export LDFLAGS="-L/usr/local/opt/ruby/lib"
+export CPPFLAGS="-I/usr/local/opt/ruby/include"
+export PKG_CONFIG_PATH="/usr/local/opt/ruby/lib/pkgconfig"
+
+
+# ---  GPG key  --- #
+export GPG_TTY=$(tty)
