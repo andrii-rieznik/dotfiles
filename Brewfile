@@ -46,7 +46,8 @@ cask "transmission"
 cask "visual-studio-code"
 cask "vlc"
 cask "zeplin"
-cask "zoomus"
+cask "zoom"
+
 
 # Github actions cannot install these.
 unless ENV.has_key?('CI') then
