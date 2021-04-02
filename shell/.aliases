@@ -6,7 +6,6 @@ alias ..="cd .."
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias docs="cd ~/Documents"
-alias dotfiles="cd ~/.dotfiles"
 
 alias la="ls -lah"
 alias ll="ls -l"
@@ -43,3 +42,9 @@ alias remove-dangling-volumes='docker volume rm $(docker volume ls -qf dangling=
 # ---  shell  --- #
 
 alias zshreload=". ~/.zshrc"
+
+
+# ---  editor  --- #
+
+alias dotfiles="code ~/workspace/dotfiles"
+alias shell_env_local="code ~/.shell_env_local "
