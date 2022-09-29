@@ -4,9 +4,6 @@
 [submodule "dotbot-brewfile"]
 	path = dotbot-brewfile
 	url = https://github.com/sobolevn/dotbot-brewfile.git
-[submodule "dotbot-pip"]
-	path = dotbot-pip
-	url = https://github.com/sobolevn/dotbot-pip.git
-[submodule "dotbot-duti"]
-	path = dotbot-duti
-	url = https://github.com/andrejreznik/dotbot-duti.git
+[submodule "oh-my-zsh/custom/themes/rho"]
+	path = oh-my-zsh/custom/themes/rho
+	url = https://github.com/andriyreznik/rho-zsh-theme.git
