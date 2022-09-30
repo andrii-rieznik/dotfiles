@@ -1,22 +1,5 @@
 #!/usr/bin/env zsh
 
-# ---  navigation  --- #
-
-alias ..="cd .."
-alias db="cd ~/Dropbox"
-alias dl="cd ~/Downloads"
-alias docs="cd ~/Documents"
-
-alias la="ls -lah"
-alias ll="ls -l"
-alias ladate="la -t"
-
-
-# ---  colorize  --- #
-
-alias grep='grep --color=auto'
-
-
 # ---  git  --- #
 
 alias ga='git add'
@@ -47,4 +30,4 @@ alias zshreload=". ~/.zshrc"
 # ---  editor  --- #
 
 alias dotfiles="code ~/workspace/dotfiles"
-alias shell_env_local="code ~/.shell_env_local "
+alias shell_env_local="code ~/.shell_env_local"

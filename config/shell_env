@@ -1,11 +1,11 @@
 #!/usr/bin/env zsh
 
-. "$HOME/.shell/.exports"
-. "$HOME/.shell/.aliases"
-. "$HOME/.shell/.functions"
+source "$HOME/.shell/.exports"
+source "$HOME/.shell/.aliases"
+source "$HOME/.shell/.functions"
 
-# ---  Local variables and overrides  --- #
+# ---  Local variables and some secrets  --- #
 
 if [[ -f "$HOME/.shell_env_local" ]]; then
-  . "$HOME/.shell_env_local"
+  source "$HOME/.shell_env_local"
 fi

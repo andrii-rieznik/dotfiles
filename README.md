@@ -1,3 +1,3 @@
-# Reznik's dotfiles
+# 🏡 dotfiles
 
-![andrejreznik's dotfiles](https://raw.githubusercontent.com/andrejreznik/dotfiles/master/media/terminal.png)
+![windows-terminal](https://raw.githubusercontent.com/andrejreznik/dotfiles/master/media/terminal.png)
