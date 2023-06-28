@@ -25,7 +25,7 @@ NOTE! Before installation make sure you have backed up copy of your `.zshrc`.
 1. Clone this repo to your machine.
 
 ```shell
-git clone https://github.com/andriyreznik/dotfiles.git
+git clone --recurse-submodules git@github.com:andriyreznik/dotfiles.git
 ```
 
 1. Change the directory to the cloned repo.
