@@ -17,12 +17,8 @@
       path: config/zshrc
     ~/.oh-my-zsh/custom/themes/rho.zsh-theme: oh-my-zsh/custom/themes/rho/rho.zsh-theme
 
-- brewfile:
-    file: Brewfile
-    stdout: true
-    stderr: true
-    no-upgrade: true
-    include: ['tap', 'brew']
+# - brewfile:
+#   - Brewfile
 
 - shell:
   - [zsh macos/defaults, Import macOS defaults]

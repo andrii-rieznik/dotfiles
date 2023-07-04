@@ -7,13 +7,9 @@ export ZSH="$HOME/.oh-my-zsh"  # Path to your oh-my-zsh installation.
 
 # ---  Homebrew  --- #
 
-if [[ `uname` == "Linux" ]]; then
-  export PATH="/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin/:$PATH"
-  export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+if [[ `uname` == "Darwin" ]]; then
+  export HOMEBREW_NO_ANALYTICS=1  # prevent brew to collect statistic
 fi
-
-export HOMEBREW_NO_ANALYTICS=1  # prevent brew to collect statistic
 
 
 # ---  GPG key  --- #
