@@ -17,11 +17,15 @@
       path: config/zshrc
     ~/.oh-my-zsh/custom/themes/rho.zsh-theme: oh-my-zsh/custom/themes/rho/rho.zsh-theme
 
-# - brewfile:
-#   - Brewfile
+- brewfile:
+  - Brewfile
 
 - shell:
-  - [zsh macos/defaults, Import macOS defaults]
+  - command: zsh macos/defaults
+    description: Import macOS defaults
+    # if: "[[ `uname` == "Darwin" ]]"
 
 - shell:
-  - [brew cleanup, Cleaning up]
+  - command: brew cleanup
+    description: Cleaning up
+    # if: "[[ `uname` == "Darwin" ]]"
