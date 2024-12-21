@@ -2,33 +2,23 @@
 # See https://github.com/Homebrew/homebrew-bundle
 
 tap "homebrew/bundle"
-tap "homebrew/cask"
 
 brew "bat"
-brew "ctop"
+brew "pinentry-mac"
 brew "tree"
 
 unless ENV.key? 'CI'
   cask "1password"
-  cask "altair-graphql-client"
-  cask "deezer"
-  cask "google-chrome"
-  cask "gpg-suite"
+  cask "adobe-acrobat-reader"
+  cask "docker"
   cask "firefox"
-  cask "gimp"
-  cask "google-chrome"
   cask "gpg-suite"
-  cask "microsoft-teams"
-  cask "pgadmin4"
-  cask "postman"
-  cask "qgis"
-  cask "slack"
-  cask "tailscale"
-  cask "teamviewer"
-  cask "transmission"
   cask "visual-studio-code"
-  cask "vlc"
-  cask "zoom"
+  cask "whatsapp"
 
+  vscode "editorconfig.editorconfig"
+  vscode "github.copilot"
+  vscode "github.copilot-chat"
+  vscode "ms-azuretools.vscode-docker"
   vscode "ms-vscode-remote.remote-containers"
 end

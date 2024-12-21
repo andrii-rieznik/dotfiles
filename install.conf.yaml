@@ -1,28 +1,28 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+
 - clean: ['~', '~/.oh-my-zsh/custom']
 
 - shell:
   - command: |
-      if [ ! -d ~/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"; fi
-    description: Install oh-my-zsh if its folder does not exist
-    stdout: true
-    stderr: true
+      if [ ! -d ~/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://install.ohmyz.sh)"; fi
+    description: Installing Oh My Zsh!
 
-- link:
-    ~/.shell:
-      path: shell
-      create: true
-    ~/.shell_env: config/shell_env
-    ~/.zshrc:
-      force: true
-      path: config/zshrc
-    ~/.oh-my-zsh/custom/themes/rho.zsh-theme: oh-my-zsh/custom/themes/rho/rho.zsh-theme
+- shell:
+  - command: git submodule update --init --recursive
+    description: Installing git submodules
 
 - shell:
   - command: brew bundle
-    description: Installing Homebrew packages
-    stdout: true
-    stderr: true
+    description: "Homebrew: installing packages"
 
 - shell:
   - command: brew cleanup
-    description: Cleaning up
+    description: "Homebrew: Cleaning up"
+
+- link:
+    ~/.zshrc:
+      force: true
+    ~/.oh-my-zsh/custom/themes/rho.zsh-theme: oh-my-zsh/custom/themes/rho/rho.zsh-theme
