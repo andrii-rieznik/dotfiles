@@ -1,45 +1,39 @@
 # 🏡 dotfiles
 
-Yet another repo with collection of the personal configs and settings for shell.
-Powered by [Dotbot](https://github.com/anishathalye/dotbot) which helps to sync them and create symlinks to the files in the repository.
+![Build](https://img.shields.io/github/actions/workflow/status/andrii-rieznik/dotfiles/build.yml?branch=master&logo=github&label=macOS)
 
-
-## Overview
-
-This is a collection of configurations and settings for shell with work purpose. It tends to be minimalistic and clean.
+Yet another collection of personal shell configuration files.
+Powered by [Dotbot](https://github.com/anishathalye/dotbot).
 
 ![windows-terminal](media/windows_terminal.png)
 
+## ⤵️ What's inside?
 
-## 📌 Requirements
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) - for managing configurations;
 
-- `git` - for performing basic Git operations.
+- [Brewfile](Brewfile) for managing my command line programs and GUI-based macOS apps;
 
-- [Zsh](https://www.zsh.org/) - since this repo is used [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) to manage configurations.
+- My custom [theme](oh-my-zsh/custom/themes).
 
+## 📦 Installation
 
-## 🚀 Quick start
+> [!NOTE]
+> Before starting, ensure you have a backed-up copy of your `.zshrc`.
 
-NOTE! Before installation make sure you have backed up copy of your `.zshrc`.
-
-1. Clone this repo to your machine.
+1. Clone this repository into any preferred folder:
 
 ```shell
-git clone --recurse-submodules git@github.com:andriyreznik/dotfiles.git
+git clone git@github.com:andrii-rieznik/dotfiles.git
 ```
 
-1. Change the directory to the cloned repo.
+2. Change into the dotfiles subdirectory:
 
 ```shell
 cd dotfiles
 ```
 
-1. Run installation script and wait till the dotfiles will be synced and configured.
+3. Run the installation [script](install):
 
 ```shell
 ./install
 ```
-
-## ⚖️ License
-
-See [LICENSE](LICENSE).
