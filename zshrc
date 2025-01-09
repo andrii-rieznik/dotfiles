@@ -7,6 +7,7 @@ ZSH_THEME="rho"
 plugins=(
   cup
   git
+  zsh-you-should-use
 )
 
 source $ZSH/oh-my-zsh.sh
