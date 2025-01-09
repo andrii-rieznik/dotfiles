@@ -4,3 +4,6 @@
 [submodule "oh-my-zsh/custom/themes/rho"]
 	path = oh-my-zsh/custom/themes/rho
 	url = https://github.com/andriyreznik/rho-zsh-theme.git
+[submodule "oh-my-zsh/custom/plugins/zsh-you-should-use"]
+	path = oh-my-zsh/custom/plugins/zsh-you-should-use
+	url = git@github.com:MichaelAquilina/zsh-you-should-use.git
