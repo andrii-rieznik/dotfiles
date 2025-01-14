@@ -7,6 +7,7 @@ ZSH_THEME="rho"
 plugins=(
   cup
   git
+  zsh-autosuggestions
   zsh-you-should-use
 )
 
