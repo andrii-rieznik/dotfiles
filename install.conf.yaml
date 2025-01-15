@@ -8,15 +8,15 @@
 - shell:
   - command: |
       if [ ! -d ~/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://install.ohmyz.sh)"; fi
-    description: Installing Oh My Zsh!
+    description: "Shell: Installing Oh My Zsh!"
 
 - shell:
   - command: git submodule update --init --recursive
-    description: Installing git submodules
+    description: "Git: Installing submodules"
 
 - shell:
   - command: brew bundle
-    description: "Homebrew: installing packages"
+    description: "Homebrew: Installing packages"
 
 - shell:
   - command: brew cleanup
