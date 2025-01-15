@@ -10,6 +10,7 @@ brew "tree"
 unless ENV.key? 'CI'
   cask "1password"
   cask "adobe-acrobat-reader"
+  cask "clearvpn"
   cask "docker"
   cask "firefox"
   cask "gpg-suite"
