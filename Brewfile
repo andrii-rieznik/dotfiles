@@ -13,6 +13,7 @@ unless ENV.key? 'CI'
   cask "clearvpn"
   cask "docker"
   cask "firefox"
+  cask "font-ibm-plex-mono"
   cask "gpg-suite"
   cask "visual-studio-code"
   cask "whatsapp"

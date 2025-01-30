@@ -1,12 +1,12 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "oh-my-zsh/custom/themes/rho"]
-	path = oh-my-zsh/custom/themes/rho
-	url = https://github.com/andriyreznik/rho-zsh-theme.git
+[submodule "oh-my-zsh/custom/themes/rie"]
+	path = oh-my-zsh/custom/themes/rie
+	url = https://github.com/andrii-rieznik/rie-zsh-theme
 [submodule "oh-my-zsh/custom/plugins/zsh-you-should-use"]
 	path = oh-my-zsh/custom/plugins/zsh-you-should-use
-	url = git@github.com:MichaelAquilina/zsh-you-should-use.git
+	url = https://github.com/MichaelAquilina/zsh-you-should-use
 [submodule "oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 	path = oh-my-zsh/custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
+	url = https://github.com/zsh-users/zsh-autosuggestions
