@@ -26,5 +26,6 @@
     ~/.zshrc:
       force: true
     ~/.oh-my-zsh/custom/themes/rie.zsh-theme: oh-my-zsh/custom/themes/rie/rie.zsh-theme
+    ~/.oh-my-zsh/custom/plugins/autoupdate: oh-my-zsh/custom/plugins/autoupdate
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions
     ~/.oh-my-zsh/custom/plugins/zsh-you-should-use: oh-my-zsh/custom/plugins/zsh-you-should-use

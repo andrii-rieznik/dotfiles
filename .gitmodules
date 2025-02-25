@@ -10,3 +10,6 @@
 [submodule "oh-my-zsh/custom/plugins/zsh-autosuggestions"]
 	path = oh-my-zsh/custom/plugins/zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions
+[submodule "oh-my-zsh/custom/plugins/autoupdate"]
+	path = oh-my-zsh/custom/plugins/autoupdate
+	url = https://github.com/TamCore/autoupdate-oh-my-zsh-plugins

@@ -5,6 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="rie"
 
 plugins=(
+  autoupdate
   git
   zsh-autosuggestions
   zsh-you-should-use
