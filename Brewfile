@@ -1,7 +1,4 @@
-# Install non-Ruby dependencies in Bundle way.
-# See https://github.com/Homebrew/homebrew-bundle
-
-tap "homebrew/bundle"
+# Install non-Ruby dependencies in the Bundle way.
 
 brew "bat"
 brew "pinentry-mac"
@@ -14,8 +11,14 @@ unless ENV.key? 'CI'
   cask "docker"
   cask "firefox"
   cask "font-ibm-plex-mono"
+  cask "gimp"
   cask "gpg-suite"
+  cask "handbrake"
+  cask "pgadmin4"
+  cask "teamviewer"
+  cask "transmission"
   cask "visual-studio-code"
+  cask "vlc"
   cask "whatsapp"
 
   vscode "editorconfig.editorconfig"
