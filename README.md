@@ -5,15 +5,19 @@
 Yet another collection of personal shell configuration files.
 Powered by [Dotbot](https://github.com/anishathalye/dotbot).
 
-![windows-terminal](media/windows_terminal.png)
+![windows-terminal](media/terminal.png)
 
 ## ⤵️ What's inside?
 
-- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) - for managing configurations;
+- [Brewfile](Brewfile) for managing command line programs and GUI-based macOS apps.
 
-- [Brewfile](Brewfile) for managing my command line programs and GUI-based macOS apps;
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) - for managing configurations,
 
-- My custom [theme](oh-my-zsh/custom/themes).
+  - Custom [plugins](oh-my-zsh/custom/plugins);
+
+  - Custom [theme](oh-my-zsh/custom/themes);
+
+- Terminal.app [profile](config/terminal) which includes settings for colors, fonts, and more.
 
 ## 📦 Installation
 
