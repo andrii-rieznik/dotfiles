@@ -9,15 +9,15 @@ Powered by [Dotbot](https://github.com/anishathalye/dotbot).
 
 ## ⤵️ What's inside?
 
-- [Brewfile](Brewfile) for managing command line programs and GUI-based macOS apps.
+- [Brewfile](Brewfile) is used to manage command-line programs and GUI-based macOS apps.
 
 - [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) - for managing configurations,
 
   - Custom [plugins](oh-my-zsh/custom/plugins);
 
-  - Custom [theme](oh-my-zsh/custom/themes);
+  - Custom [themes](oh-my-zsh/custom/themes);
 
-- Terminal.app [profile](config/terminal) which includes settings for colors, fonts, and more.
+- Terminal.app [profiles](config/terminal/profiles), which include settings for colors, fonts, and more.
 
 ## 📦 Installation
 
