@@ -1,6 +1,7 @@
 # Install non-Ruby dependencies in the Bundle way.
 
 brew "bat"
+brew "mas"
 brew "pinentry-mac"
 brew "tree"
 
@@ -20,6 +21,10 @@ unless ENV.key? 'CI'
   cask "visual-studio-code"
   cask "vlc"
   cask "whatsapp"
+
+  mas "Keynote", id: 409183694
+  mas "Numbers", id: 409203825
+  mas "Pages", id: 409201541
 
   vscode "editorconfig.editorconfig"
   vscode "github.copilot"
