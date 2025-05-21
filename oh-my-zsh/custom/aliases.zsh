@@ -8,3 +8,7 @@ alias zshreload="source ~/.zshrc"
 DOTFILES_PATH=$(git config -f "$HOME/.gitconfig" --get dotfiles.path)
 
 alias dotfiles="code $DOTFILES_PATH"
+
+# To prevent typos when using the `brew` command
+alias brw="brew"
+alias brwe="brew"
