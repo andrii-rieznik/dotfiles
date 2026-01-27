@@ -9,6 +9,21 @@ DOTFILES_PATH=$(git config -f "$HOME/.gitconfig" --get dotfiles.path)
 
 alias dotfiles="code $DOTFILES_PATH"
 
-# To prevent typos when using the `brew` command
+# To prevent different typos
+
+# Homebrew
 alias brw="brew"
 alias brwe="brew"
+
+# Visual Studio Code
+code.() {
+  code .
+}
+
+code() {
+  if [[ $@ == "," ]]; then
+    command code .
+  else
+    command code "$@"
+  fi
+}
