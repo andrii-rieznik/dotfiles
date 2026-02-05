@@ -1,6 +1,5 @@
-# Install non-Ruby dependencies in the Bundle way.
-
 brew "bat"
+brew "helm"
 brew "mas"
 brew "pinentry-mac"
 brew "tree"
@@ -15,6 +14,7 @@ unless ENV.key? 'CI'
   cask "gimp"
   cask "gpg-suite"
   cask "handbrake"
+  cask "mattermost"
   cask "pgadmin4"
   cask "teamviewer"
   cask "transmission"
@@ -27,8 +27,7 @@ unless ENV.key? 'CI'
   mas "Pages", id: 409201541
 
   vscode "editorconfig.editorconfig"
-  vscode "github.copilot"
   vscode "github.copilot-chat"
-  vscode "ms-azuretools.vscode-docker"
+  vscode "ms-azuretools.vscode-containers"
   vscode "ms-vscode-remote.remote-containers"
 end
