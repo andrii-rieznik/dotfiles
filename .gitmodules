@@ -13,3 +13,6 @@
 [submodule "oh-my-zsh/custom/plugins/autoupdate"]
 	path = oh-my-zsh/custom/plugins/autoupdate
 	url = https://github.com/TamCore/autoupdate-oh-my-zsh-plugins
+[submodule "oh-my-zsh/custom/plugins/zsh-syntax-highlighting"]
+	path = oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting

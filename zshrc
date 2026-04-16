@@ -8,6 +8,7 @@ plugins=(
   autoupdate
   git
   zsh-autosuggestions
+  zsh-syntax-highlighting
   zsh-you-should-use
 )
 
