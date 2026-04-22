@@ -6,24 +6,17 @@
 - clean: ['~', '~/.oh-my-zsh/custom']
 
 - shell:
-  - command: |
-      if [ ! -d ~/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://install.ohmyz.sh)"; fi
+  - command: if [ ! -d ~/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://install.ohmyz.sh)"; fi
     description: "Shell: Installing Oh My Zsh!"
 
 - shell:
   - command: git submodule update --init --recursive
     description: "Git: Installing submodules"
 
-- shell:
-  - command: brew bundle
-    description: "Homebrew: Installing packages"
-
-- shell:
-  - command: brew cleanup
-    description: "Homebrew: Cleaning up"
-
 - link:
     ~/.zshrc:
+      force: true
+    ~/.Brewfile:
       force: true
     ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
     ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions
@@ -31,6 +24,14 @@
     ~/.oh-my-zsh/custom/plugins/zsh-you-should-use: oh-my-zsh/custom/plugins/zsh-you-should-use
     ~/.oh-my-zsh/custom/themes/rie.zsh-theme: oh-my-zsh/custom/themes/rie/rie.zsh-theme
     ~/.oh-my-zsh/custom/ysu.zsh: oh-my-zsh/custom/ysu.zsh
+
+- shell:
+  - command: brew bundle --global
+    description: "Homebrew: Installing packages"
+
+- shell:
+  - command: brew cleanup
+    description: "Homebrew: Cleaning up"
 
 - shell:
   - command: |
