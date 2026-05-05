@@ -24,6 +24,7 @@
     ~/.oh-my-zsh/custom/plugins/zsh-you-should-use: oh-my-zsh/custom/plugins/zsh-you-should-use
     ~/.oh-my-zsh/custom/themes/rie.zsh-theme: oh-my-zsh/custom/themes/rie/rie.zsh-theme
     ~/.oh-my-zsh/custom/ysu.zsh: oh-my-zsh/custom/ysu.zsh
+    ~/.ssh/config: ssh/config
 
 - shell:
   - command: brew bundle --global
