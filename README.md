@@ -11,18 +11,15 @@ Powered by [Dotbot](https://github.com/anishathalye/dotbot).
 
 - [Brewfile](Brewfile) is used to manage command-line programs and GUI-based macOS apps.
 
-- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh) - for managing configurations,
+- [Oh My Zsh](https://github.com/ohmyzsh/ohmyzsh): for managing configurations.
 
-  - Custom [plugins](oh-my-zsh/custom/plugins);
+    - Custom [plugins](oh-my-zsh/custom/plugins).
 
-  - Custom [themes](oh-my-zsh/custom/themes);
+    - Custom [themes](oh-my-zsh/custom/themes).
 
 - Terminal.app [profiles](config/terminal/profiles), which include settings for colors, fonts, and more.
 
 ## 📦 Installation
-
-> [!NOTE]
-> Before starting, ensure you have a backed-up copy of your `.zshrc`.
 
 1. Clone this repository into any preferred folder:
 
@@ -37,6 +34,9 @@ cd dotfiles
 ```
 
 3. Run the installation [script](install):
+
+> [!NOTE]
+> During the first installation, the original config file will be backed up in the home folder `~/.zshrc.dotbot-backup.YYYYMMDD-HHMMSS`.
 
 ```shell
 ./install
