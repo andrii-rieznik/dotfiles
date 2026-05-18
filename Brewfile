@@ -1,4 +1,5 @@
 brew "bat"
+brew "glow"
 brew "mas"
 brew "pinentry-mac"
 brew "tree"
