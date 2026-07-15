@@ -13,12 +13,19 @@
   - command: git submodule update --init --recursive
     description: "Git: Installing submodules"
 
+- shell:
+  - command: touch gitconfig.local
+    description: "Files: Ensure gitconfig.local exists"
+
 - link:
     ~/.zshrc:
       backup: true
       force: true
     ~/.Brewfile:
       force: true
+    ~/.gitconfig:
+      backup: true
+    ~/.gitconfig.local:
     ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
     ~/.oh-my-zsh/custom/glow.zsh: oh-my-zsh/custom/glow.zsh
     ~/.oh-my-zsh/custom/op.zsh: oh-my-zsh/custom/op.zsh
