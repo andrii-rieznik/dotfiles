@@ -13,6 +13,10 @@
   - command: git submodule update --init --recursive
     description: "Git: Installing submodules"
 
+- shell:
+  - command: touch gitconfig.local
+    description: "Git: Configuration"
+
 - link:
     ~/.zshrc:
       backup: true
@@ -20,7 +24,6 @@
     ~/.Brewfile:
       force: true
     ~/.gitconfig:
-      backup: true
     ~/.gitconfig.local:
       force: true
       backup: true
