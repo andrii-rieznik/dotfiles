@@ -20,7 +20,9 @@
     ~/.Brewfile:
       force: true
     ~/.gitconfig:
+      backup: true
     ~/.gitconfig.local:
+      backup: true
     ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
     ~/.oh-my-zsh/custom/glow.zsh: oh-my-zsh/custom/glow.zsh
     ~/.oh-my-zsh/custom/op.zsh: oh-my-zsh/custom/op.zsh
