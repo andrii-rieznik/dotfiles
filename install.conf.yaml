@@ -15,7 +15,7 @@
 
 - shell:
   - command: touch gitconfig.local
-    description: "Git: Configuration"
+    description: "Files: Ensure gitconfig.local exists"
 
 - link:
     ~/.zshrc:
@@ -24,9 +24,8 @@
     ~/.Brewfile:
       force: true
     ~/.gitconfig:
-    ~/.gitconfig.local:
-      force: true
       backup: true
+    ~/.gitconfig.local:
     ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
     ~/.oh-my-zsh/custom/glow.zsh: oh-my-zsh/custom/glow.zsh
     ~/.oh-my-zsh/custom/op.zsh: oh-my-zsh/custom/op.zsh
