@@ -27,8 +27,6 @@
       force: true
     ~/.gitconfig:
     ~/.gitconfig.local:
-    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
-    ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.oh-my-zsh/custom/: oh-my-zsh/custom/*.zsh
     ~/.oh-my-zsh/custom/plugins/: oh-my-zsh/custom/plugins/*
     ~/.oh-my-zsh/custom/themes/: oh-my-zsh/custom/themes/**.zsh-theme
