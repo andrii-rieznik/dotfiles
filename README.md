@@ -36,7 +36,8 @@ cd dotfiles
 3. Run the installation [script](install):
 
 > [!NOTE]
-> During the first installation, the original config file will be backed up in the home folder `~/.zshrc.dotbot-backup.YYYYMMDD-HHMMSS`.
+> During the first installation, a backup of the user configuration files will be created along with the newly created
+> symbolic links to the project files, e.g. `~/.zshrc.dotbot-backup.YYYYMMDD-HHMMSS`.
 
 ```shell
 ./install
