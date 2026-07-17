@@ -1,9 +1,14 @@
 - defaults:
     link:
-        create: true
-        relink: true
+      backup: true
+      glob: true
+      create: true
 
-- clean: ['~', '~/.oh-my-zsh/custom']
+- clean:
+    ~/:
+    ~/.oh-my-zsh/custom/:
+      recursive: true
+    ~/.ssh:
 
 - shell:
   - command: if [ ! -d ~/.oh-my-zsh ]; then sh -c "$(curl -fsSL https://install.ohmyz.sh)"; fi
@@ -15,26 +20,18 @@
 
 - shell:
   - command: touch gitconfig.local
-    description: "Files: Ensure gitconfig.local exists"
+    description: "Git: Ensure gitconfig.local exists"
 
 - link:
-    ~/.zshrc:
-      backup: true
-      force: true
+    ~/:
+      path: gitconfig*
+      prefix: '.'
     ~/.Brewfile:
-      force: true
-    ~/.gitconfig:
-      backup: true
-    ~/.gitconfig.local:
-    ~/.oh-my-zsh/custom/aliases.zsh: oh-my-zsh/custom/aliases.zsh
-    ~/.oh-my-zsh/custom/glow.zsh: oh-my-zsh/custom/glow.zsh
-    ~/.oh-my-zsh/custom/op.zsh: oh-my-zsh/custom/op.zsh
-    ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions: oh-my-zsh/custom/plugins/zsh-autosuggestions
-    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting: oh-my-zsh/custom/plugins/zsh-syntax-highlighting
-    ~/.oh-my-zsh/custom/plugins/zsh-you-should-use: oh-my-zsh/custom/plugins/zsh-you-should-use
-    ~/.oh-my-zsh/custom/themes/rie.zsh-theme: oh-my-zsh/custom/themes/rie/rie.zsh-theme
-    ~/.oh-my-zsh/custom/ysu.zsh: oh-my-zsh/custom/ysu.zsh
+    ~/.oh-my-zsh/custom/: oh-my-zsh/custom/*.zsh
+    ~/.oh-my-zsh/custom/plugins/: oh-my-zsh/custom/plugins/*
+    ~/.oh-my-zsh/custom/themes/: oh-my-zsh/custom/themes/**.zsh-theme
     ~/.ssh/config: ssh/config
+    ~/.zshrc:
 
 - shell:
   - command: brew bundle --global
