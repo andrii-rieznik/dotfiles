@@ -23,10 +23,10 @@
     description: "Git: Ensure gitconfig.local exists"
 
 - link:
+    ~/:
+      path: gitconfig*
+      prefix: '.'
     ~/.Brewfile:
-      force: true
-    ~/.gitconfig:
-    ~/.gitconfig.local:
     ~/.oh-my-zsh/custom/: oh-my-zsh/custom/*.zsh
     ~/.oh-my-zsh/custom/plugins/: oh-my-zsh/custom/plugins/*
     ~/.oh-my-zsh/custom/themes/: oh-my-zsh/custom/themes/**.zsh-theme
