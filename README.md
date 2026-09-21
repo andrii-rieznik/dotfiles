@@ -5,7 +5,7 @@
 Yet another collection of personal shell configuration files.
 Powered by [Dotbot](https://github.com/anishathalye/dotbot).
 
-![windows-terminal](media/terminal.png)
+![terminal](screenshots/terminal.png)
 
 ## ⤵️ What's inside?
 
@@ -17,7 +17,7 @@ Powered by [Dotbot](https://github.com/anishathalye/dotbot).
 
     - Custom [themes](oh-my-zsh/custom/themes).
 
-- Terminal.app [profiles](config/terminal/profiles), which include settings for colors, fonts, and more.
+- Terminal.app [profiles](terminal/profiles), which include settings for colors, fonts, and more.
 
 ## 📦 Installation
 

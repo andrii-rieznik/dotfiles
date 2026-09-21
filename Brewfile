@@ -14,7 +14,6 @@ unless ENV.key? 'CI'
   cask "deezer"
   cask "docker-desktop"
   cask "firefox"
-  cask "font-ibm-plex-mono"
   cask "gimp"
   cask "google-chrome"
   cask "libreoffice"
