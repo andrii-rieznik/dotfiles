@@ -45,5 +45,5 @@
 
 - shell:
   - command: |
-      if [ -z "$CI" ]; then osascript scripts/setup_terminal.applescript; fi
+      if [ -z "$CI" ]; then osascript terminal/setup.applescript; fi
     description: "macOS: Setting up Terminal.app"

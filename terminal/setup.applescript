@@ -1,9 +1,9 @@
 tell application "Terminal"
     -- Create a new settings set
-    set themeName to "riez"
+    set themeName to "Riez"
 
     -- Open the theme file
-    do shell script "open 'config/terminal/profiles/" & themeName & ".terminal'"
+    do shell script "open 'terminal/profiles/" & themeName & ".terminal'"
 
     -- Wait for import to complete
     delay 1
@@ -16,6 +16,6 @@ tell application "Terminal"
 
     -- Apply to current windows
     repeat with w in windows
-        set current settings of w to settings set themeName
+      set current settings of w to settings set themeName
     end repeat
 end tell
