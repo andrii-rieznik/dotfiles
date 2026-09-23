@@ -1,2 +1,5 @@
+[core]
+	editorconfig = ~/.editorconfig
+
 [include]
   path = ~/.gitconfig.local
