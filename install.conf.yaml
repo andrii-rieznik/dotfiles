@@ -47,5 +47,10 @@
 
 - shell:
   - command: |
-      if [ -z "$CI" ]; then osascript terminal/setup.applescript; fi
+      if [ -z "$CI" ]; then macos/defaults.sh; fi
+    description: "macOS: Applying defaults settings"
+
+- shell:
+  - command: |
+      if [ -f terminal/setup.applescript ] && [ -z "$CI" ]; then osascript terminal/setup.applescript; fi
     description: "macOS: Setting up Terminal.app"
