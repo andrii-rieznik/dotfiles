@@ -33,7 +33,7 @@
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.oh-my-zsh/custom/: oh-my-zsh/custom/*.zsh
     ~/.oh-my-zsh/custom/plugins/: oh-my-zsh/custom/plugins/*
-    ~/.oh-my-zsh/custom/themes/: oh-my-zsh/custom/themes/**.zsh-theme
+    ~/.oh-my-zsh/custom/themes/rie.zsh-theme: oh-my-zsh/custom/themes/rie/rie.zsh-theme
     ~/.ssh/config: ssh/config
     ~/.zshrc:
 
